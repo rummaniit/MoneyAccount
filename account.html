@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Account Page</title>
+</head>
+
+<body>
+    <h1 class="text-5xl font-semibold mt-12 text-center"> <span class="text-lime-400 ">Rumman's </span>
+        <span class="text-orange-400">Account
+            Informatin</span>
+    </h1>
+
+    <section class="mt-12 grid grid-cols-3 gap-4 w-10/12 mx-auto text-center">
+        <div class="w-3/4 bg-lime-500 text-center text-white p-5 rounded-lg">
+            <h1 class="text-3xl text-semibold">Deposite</h1>
+            <h3 class="text-3xl text-semibold">$<span id="total-deposite">00</span></h3>
+        </div>
+        <div class="w-3/4 bg-orange-500 text-center text-white p-5 rounded-lg">
+            <h1 class="text-3xl text-semibold">Widraw</h1>
+            <h3 class="text-3xl text-semibold">$<span id="total-widraw">00</span></h3>
+        </div>
+        <div class="w-3/4 bg-violet-500 text-center text-white p-5 rounded-lg">
+            <h1 class="text-3xl text-semibold">Total Money</h1>
+            <h3 class="text-3xl text-semibold">$<span id="total-money">1240</span></h3>
+        </div>
+    </section>
+
+
+    <section class="mt-24 grid grid-cols-2 gap-4 w-10/12 mx-auto text-center px-12 ">
+
+        <div class="w-3/4 bg-orange-400 text-center text-white p-5 rounded-lg">
+            <h1 class="text-3xl text-semibold mb-3">Deposite your Money</h1>
+            <input type="text" name="" id="deposite-input" class="w-3/4 p-1 rounded-lg text-black"
+                placeholder="Deposite Money">
+            <button id="deposite-btn" class="bg-lime-400 px-3 py-2 mt-3 text-xl rounded-lg hover:bg-blue-600">Deposite
+                Money</button>
+        </div>
+
+        <div class="w-3/4 bg-violet-400 text-center text-white p-5 rounded-lg">
+            <h1 class="text-3xl text-semibold mb-3">Withraw your Money</h1>
+            <input type="text" name="" id="widraw-input" class="w-3/4 p-1 rounded-lg text-black"
+                placeholder="Withraw Money">
+            <button id="widraw-btn" class="bg-lime-400 px-3 py-2 mt-3 text-xl rounded-lg hover:bg-blue-600">Withraw
+                Money</button>
+        </div>
+    </section>
+
+
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+</body>
+
+</html>
